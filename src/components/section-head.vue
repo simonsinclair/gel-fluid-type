@@ -24,7 +24,16 @@ export default {
   @import '../common';
 
   .section-head {
+    background-color: $purple-l1;
     padding-top: 16px;
     padding-bottom: 16px;
+
+    h1 {
+      @include gel-typography('canon');
+
+      color: #FFF;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
   }
 </style>

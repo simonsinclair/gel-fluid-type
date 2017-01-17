@@ -3,7 +3,11 @@
     <div class="gel-wrap">
       <div class="gel-layout">
         <div class="gel-layout__item gel-2/12">
-          <p>Contributor.</p>
+          <contributor
+            src="http://placehold.it/64x64"
+            name="Dr Maggie Aderin-Pocock"
+            role="Presenter"
+          ></contributor>
         </div>
         <div class="gel-layout__item gel-8/12">
           <h2>Beam me up: These pillars of light are like something out of Star Trek</h2>
@@ -15,20 +19,34 @@
 </template>
 
 <script>
-export default {
-  data() {
-    return {
+  import Contributor from './contributor';
 
-    };
-  },
-};
+  export default {
+    components: {
+      Contributor,
+    },
+    data() {
+      return {
+
+      };
+    },
+  };
 </script>
 
 <style lang="scss">
   @import '../common';
 
   .title-head {
+    background-color: $purple-l2;
+    color: #FFF;
     padding-top: 32px;
     padding-bottom: 32px;
+
+    h2 {
+      @include gel-typography('trafalgar-bold');
+    }
+    p {
+      @include gel-typography('great-primer');
+    }
   }
 </style>

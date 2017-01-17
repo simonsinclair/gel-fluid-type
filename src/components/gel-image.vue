@@ -19,4 +19,7 @@ export default {
 <style lang="scss">
   @import '../common';
 
+  img {
+    max-width: 100%;
+  }
 </style>
