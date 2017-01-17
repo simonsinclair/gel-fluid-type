@@ -1,0 +1,53 @@
+// _common.scss
+//
+
+
+/**
+ * Settings
+ */
+$gel-grid-enable--markup-output: true;
+$gel-grid-enable--1280-breakpoint: true;
+
+$gel-type-enable--markup-output: true;
+$gel-type-enable--font-family: true;
+$gel-type-enable--base-elements: true;
+
+
+/**
+ * Dependencies.
+ */
+
+// "~" tells Webpack to import this 'like' a module.
+@import '~gel-sass-tools';
+@import '~sass-mq';
+
+/**
+ * Generic
+ */
+
+@import '~normalize.css';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/**
+ * Foundations
+ */
+@import '~gel-typography';
+@import '~gel-grid';
+
+
+/**
+ * Colours
+ */
+
+$purple-l1: #161628;
+$purple-l2: #323247;
+$purple-l3: #5A6E89;
