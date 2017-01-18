@@ -2,9 +2,9 @@
   <div class="metadata">
     <ul>
       <li>09 January 2017</li>
-      <li>Aurora</li>
-      <li>Canada</li>
-      <li>Natural phenomena</li>
+      <li><a href="#">Aurora</a></li>
+      <li><a href="#">Canada</a></li>
+      <li><a href="#">Natural phenomena</a></li>
     </ul>
   </div>
 </template>
@@ -22,4 +22,14 @@ export default {
 <style lang="scss">
   @import '../common';
 
+  .metadata {
+
+    ul {
+      @extend %list;
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
 </style>

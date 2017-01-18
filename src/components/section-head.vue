@@ -27,6 +27,7 @@ export default {
     background-color: $purple-l1;
     padding-top: 16px;
     padding-bottom: 16px;
+    -webkit-font-smoothing: antialiased;
 
     h1 {
       @include gel-typography('canon');

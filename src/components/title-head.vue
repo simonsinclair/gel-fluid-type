@@ -41,6 +41,7 @@
     color: #FFF;
     padding-top: 32px;
     padding-bottom: 32px;
+    -webkit-font-smoothing: antialiased;
 
     h2 {
       @include gel-typography('trafalgar-bold');

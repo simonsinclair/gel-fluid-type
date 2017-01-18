@@ -22,4 +22,19 @@ export default {
 <style lang="scss">
   @import '../common';
 
+  .more-like-this {
+
+    ul {
+      @extend %list;
+    }
+
+    h3 {
+      @include gel-typography('double-pica-bold');
+    }
+
+    a {
+      @include gel-typography('pica-bold');
+      font-weight: bold;
+    }
+  }
 </style>

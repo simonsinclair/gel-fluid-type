@@ -20,4 +20,19 @@ export default {
 <style lang="scss">
   @import '../common';
 
+  .contributor {
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .contributor__name,
+  .contributor__role {
+    @include gel-typography('pica-bold');
+  }
+
+  .contributor__role {
+    font-weight: normal;
+  }
 </style>

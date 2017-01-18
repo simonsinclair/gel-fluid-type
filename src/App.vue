@@ -13,7 +13,7 @@
         </div>
 
         <!-- Body -->
-        <div class="gel-layout__item gel-8/12">
+        <div class="article gel-layout__item gel-8/12">
           <gel-image
             src="http://placehold.it/1280x720"
             caption="Caption!"
@@ -61,5 +61,18 @@
 
   body {
     color: $purple-l1;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .article {
+
+    p {
+      margin-top: 32px;
+      margin-bottom: 0;
+    }
   }
 </style>
