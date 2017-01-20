@@ -2,7 +2,7 @@
   <div class="section-head">
     <div class="gel-wrap">
       <div class="gel-layout gel-layout--center">
-        <div class="gel-layout__item gel-8/12">
+        <div class="gel-layout__item gel-12/12 gel-8/12@m">
           <h1>The Sky at Night</h1>
         </div>
       </div>

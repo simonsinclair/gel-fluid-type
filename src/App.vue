@@ -4,16 +4,16 @@
     <section-head></section-head>
     <title-head></title-head>
 
-    <div class="gel-wrap">
+    <div class="page gel-wrap">
       <div class="gel-layout">
 
         <!-- Left -->
-        <div class="gel-layout__item gel-2/12">
+        <div class="gel-layout__item gel-12/12 gel-2/12@m">
           <metadata></metadata>
         </div>
 
         <!-- Body -->
-        <div class="article gel-layout__item gel-8/12">
+        <div class="article gel-layout__item gel-12/12 gel-8/12@m">
           <gel-image
             src="http://placehold.it/1280x720"
             caption="Caption!"
@@ -26,7 +26,7 @@
         </div>
 
         <!-- Right -->
-        <div class="gel-layout__item gel-2/12">
+        <div class="gel-layout__item gel-12/12 gel-2/12@m">
           <more-like-this></more-like-this>
         </div>
       </div>
@@ -73,6 +73,15 @@
     p {
       margin-top: 32px;
       margin-bottom: 0;
+    }
+  }
+
+  .page {
+    padding-top: 32px;
+    padding-bottom: 16px;
+
+    @include mq($from: gel-bp-m) {
+      padding-bottom: 32px;
     }
   }
 </style>

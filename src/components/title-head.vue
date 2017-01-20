@@ -2,14 +2,14 @@
   <div class="title-head">
     <div class="gel-wrap">
       <div class="gel-layout">
-        <div class="gel-layout__item gel-2/12">
+        <div class="gel-layout__item gel-12/12 gel-2/12@m">
           <contributor
             src="http://placehold.it/64x64"
             name="Dr Maggie Aderin-Pocock"
             role="Presenter"
           ></contributor>
         </div>
-        <div class="gel-layout__item gel-8/12">
+        <div class="gel-layout__item gel-12/12 gel-8/12@m">
           <h2>Beam me up: These pillars of light are like something out of Star Trek</h2>
           <p>A description goes here and would be about this long, but could be longer depending on how descriptive it is and how much was written.</p>
         </div>
@@ -49,5 +49,7 @@
     p {
       @include gel-typography('great-primer');
     }
+
+
   }
 </style>

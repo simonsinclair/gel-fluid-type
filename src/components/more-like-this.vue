@@ -23,6 +23,12 @@ export default {
   @import '../common';
 
   .more-like-this {
+    border-top: 1px solid;
+    margin-top: 32px;
+
+    @include mq($from: gel-bp-m) {
+      margin-top: 0;
+    }
 
     ul {
       @extend %list;
@@ -30,6 +36,9 @@ export default {
 
     h3 {
       @include gel-typography('double-pica-bold');
+      padding-top: 16px;
+      margin-top: 0;
+      margin-bottom: 16px;
     }
 
     a {

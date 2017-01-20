@@ -10,13 +10,13 @@
 </template>
 
 <script>
-export default {
-  data() {
-    return {
+  export default {
+    data() {
+      return {
 
-    };
-  },
-};
+      };
+    },
+  };
 </script>
 
 <style lang="scss">
@@ -26,6 +26,28 @@ export default {
 
     ul {
       @extend %list;
+      margin-top: 0;
+      margin-bottom: 0;
+      overflow: hidden; // Clearfix
+
+      li {
+        float: left;
+        margin-left: 16px;
+
+        &:first-child {
+          margin-left: 0;
+          margin-right: 16px;
+        }
+
+        @include mq($from: gel-bp-m) {
+          float: none;
+          margin-left: 0;
+
+          &:first-child {
+            margin-right: 0;
+          }
+        }
+      }
 
       a {
         text-decoration: underline;
