@@ -45,7 +45,7 @@
 
   .contributor__name,
   .contributor__role {
-    @include gel-typography('pica-bold');
+    // @include gel-typography('pica-bold');
     margin-top: 2px;
     margin-bottom: 2px;
   }

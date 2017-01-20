@@ -8,12 +8,12 @@
       <div class="gel-layout">
 
         <!-- Left -->
-        <div class="gel-layout__item gel-12/12 gel-2/12@m">
+        <div class="gel-layout__item gel-12/12 gel-3/12@m">
           <metadata></metadata>
         </div>
 
         <!-- Body -->
-        <div class="article gel-layout__item gel-12/12 gel-8/12@m">
+        <div class="article gel-layout__item gel-12/12 gel-9/12@m">
           <gel-image caption="Caption!">
             <img src="~assets/pillar-lights.jpg" alt="">
           </gel-image>
@@ -41,8 +41,10 @@
         </div>
 
         <!-- Right -->
-        <div class="gel-layout__item gel-12/12 gel-2/12@m">
-          <more-like-this></more-like-this>
+        <div class="gel-layout__item gel-12/12">
+          <div class="mlt">
+            <more-like-this></more-like-this>
+          </div>
         </div>
       </div>
     </div>
@@ -76,6 +78,8 @@
 
   body {
     color: $purple-l1;
+    font-size: 3vw;
+    line-height: 1.5;
   }
 
   a {
@@ -105,6 +109,14 @@
 
     @include mq($from: gel-bp-m) {
       padding-bottom: 32px;
+    }
+  }
+
+  .mlt {
+    padding-left: 0;
+
+    @include mq($from: gel-bp-m) {
+      padding-left: 25%;
     }
   }
 </style>

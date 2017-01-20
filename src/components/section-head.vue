@@ -2,7 +2,7 @@
   <div class="section-head">
     <div class="gel-wrap">
       <div class="gel-layout gel-layout--center">
-        <div class="gel-layout__item gel-12/12 gel-8/12@m">
+        <div class="gel-layout__item gel-12/12 gel-6/12@m">
           <h1>The Sky at Night</h1>
         </div>
       </div>
@@ -30,7 +30,9 @@ export default {
     -webkit-font-smoothing: antialiased;
 
     h1 {
-      @include gel-typography('canon');
+      // @include gel-typography('canon');
+      font-size: 5vw;
+      line-height: 1;
 
       color: #FFF;
       margin-top: 0;

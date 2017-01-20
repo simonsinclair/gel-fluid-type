@@ -28,7 +28,7 @@ export default {
     }
 
     figcaption {
-      @include gel-typography('brevier');
+      // @include gel-typography('brevier');
       color: $purple-l3;
       padding-top: 16px;
     }

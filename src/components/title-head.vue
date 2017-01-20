@@ -2,7 +2,7 @@
   <div class="title-head">
     <div class="gel-wrap">
       <div class="gel-layout">
-        <div class="gel-layout__item gel-12/12 gel-2/12@m">
+        <div class="gel-layout__item gel-12/12 gel-3/12@m">
           <contributor
             name="Dr Maggie Aderin-Pocock"
             role="Presenter"
@@ -45,14 +45,18 @@
     -webkit-font-smoothing: antialiased;
 
     h2 {
-      @include gel-typography('trafalgar-bold');
+      // @include gel-typography('trafalgar-bold');
+      font-size: 4vw;
+      line-height: 1.2;
 
       @include mq($from: gel-bp-m) {
         margin-top: 0;
       }
     }
     p {
-      @include gel-typography('great-primer');
+      // @include gel-typography('great-primer');
+      font-size: 3vw;
+      line-height: 1.2;
       margin-bottom: 0;
     }
   }
