@@ -36,16 +36,12 @@
 
         &:first-child {
           margin-left: 0;
-          margin-right: 16px;
         }
 
         @include mq($from: gel-bp-m) {
           float: none;
           margin-left: 0;
-
-          &:first-child {
-            margin-right: 0;
-          }
+          margin-bottom: 16px;
         }
       }
 

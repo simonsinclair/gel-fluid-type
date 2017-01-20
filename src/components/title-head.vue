@@ -4,14 +4,15 @@
       <div class="gel-layout">
         <div class="gel-layout__item gel-12/12 gel-2/12@m">
           <contributor
-            src="http://placehold.it/64x64"
             name="Dr Maggie Aderin-Pocock"
             role="Presenter"
-          ></contributor>
+          >
+            <img src="~assets/maggie.jpg" class="contributor__avatar" />
+          </contributor>
         </div>
         <div class="gel-layout__item gel-12/12 gel-8/12@m">
           <h2>Beam me up: These pillars of light are like something out of Star Trek</h2>
-          <p>A description goes here and would be about this long, but could be longer depending on how descriptive it is and how much was written.</p>
+          <p>Canadian man captures stunning photographs of incredibly rare natural phenomenon in the freezing night sky.</p>
         </div>
       </div>
     </div>
@@ -45,11 +46,14 @@
 
     h2 {
       @include gel-typography('trafalgar-bold');
+
+      @include mq($from: gel-bp-m) {
+        margin-top: 0;
+      }
     }
     p {
       @include gel-typography('great-primer');
+      margin-bottom: 0;
     }
-
-
   }
 </style>

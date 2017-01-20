@@ -1,13 +1,13 @@
 <template>
   <figure class="gel-image">
-    <img :src="src" alt="" />
+    <slot></slot>
     <figcaption>{{caption}}</figcaption>
   </figure>
 </template>
 
 <script>
 export default {
-  props: ['src', 'caption'],
+  props: ['caption'],
   data() {
     return {
 

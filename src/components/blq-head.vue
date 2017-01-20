@@ -1,7 +1,7 @@
 <template>
   <div class="blq-head">
     <div class="gel-wrap">
-      <strong>BBC</strong>
+      <img src="~assets/bbc-logo.svg" alt="" width="84" />
     </div>
   </div>
 </template>
@@ -21,5 +21,6 @@ export default {
 
   .blq-head {
     height: 40px;
+    padding-top: 8px;
   }
 </style>
